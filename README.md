@@ -5,6 +5,7 @@ This mode adds Swiss holidays for the GNU/Emacs calendar.
 ## Sources of data
 
 * [Feiertage in der Schweiz](https://de.wikipedia.org/wiki/Feiertage_in_der_Schweiz)
+* [CalendarLocalization](https://www.emacswiki.org/emacs/CalendarLocalization#toc34) on the EmacsWiki
 
 ## Installation
 
