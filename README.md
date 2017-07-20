@@ -1,6 +1,6 @@
 # Swiss holidays for GNU/Emacs calendar
 
-This mode adds Swiss holidays for GNU/Emacs calendar.
+This mode adds Swiss holidays for the GNU/Emacs calendar.
 
 ## Sources of data
 
