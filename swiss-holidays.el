@@ -1,8 +1,9 @@
 ;;; swiss-holidays.el --- Swiss holidays for the calendar
 
 ;; Author: Christian Egli <christian.egli@alumni.ethz.ch>
-;; URL: https://github.com/egli/swiss-holidays
 ;; Version: 0.1
+;; Keywords: calendar
+;; URL: https://github.com/egli/swiss-holidays
 
 ;; This file is not part of GNU Emacs
 
