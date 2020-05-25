@@ -35,7 +35,7 @@
 ;;        (append swiss-holidays swiss-holidays-catholic))
 ;;
 ;; The code was inspired by russian-holidays.el and
-;; https://www.emacswiki.org/emacs/CalendarLocalization#toc34
+;; https://www.emacswiki.org/emacs/CalendarLocalization
 
 ;;; Code:
 (eval-when-compile
@@ -49,7 +49,6 @@
     (holiday-fixed 1 2 "Berchtoldstag")
     (holiday-easter-etc -2 "Karfreitag")
     (holiday-easter-etc 1 "Ostermontag")
-    (holiday-fixed 5 1   "Tag der Arbeit")
     (holiday-easter-etc 39 "Auffahrt")
     (holiday-easter-etc 50 "Pfingstmontag")
     (holiday-fixed 8 1  "Bundesfeier")
@@ -65,12 +64,19 @@
     (holiday-fixed 12 8 "Mariä Empfängnis"))
   "Catholic holidays in Switzerland.")
 
-; Regional holidays for the City of Zürich
-(defvar swiss-holidays-zh-city-holidays
-  '((holiday-float 4 1 3 "Sechseläuten") ;; meistens dritter Montag im April
-    (holiday-float 9 1 3 "Knabenschiessen")) ;; zweites Wochenende im September
-					     ;; (+ halber Montag danach)
-  "Holidays for the City of Zürich.")
+; Some holidays are only valid in a few select cantons. Pick the ones
+; appropriate for your location
+(defvar swiss-holidays-epiphany
+  '((holiday-fixed 1 6   "Heilige Drei Könige"))
+  "Epiphany is only a holiday in some cantons.")
+
+(defvar swiss-holidays-st-joseph-day
+  '((holiday-fixed 3 19   "Josefstag"))
+  "St Joseph's Day is only a holiday in some cantons.")
+
+(defvar swiss-holidays-labour-day
+  '((holiday-fixed 5 1   "Tag der Arbeit"))
+  "Labour day is only a holiday in some cantons.")
 
 (provide 'swiss-holidays)
 
