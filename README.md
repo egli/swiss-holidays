@@ -5,9 +5,36 @@ This mode adds Swiss holidays for the GNU/Emacs calendar.
 ## Sources of data
 
 * [Feiertage in der Schweiz](https://de.wikipedia.org/wiki/Feiertage_in_der_Schweiz)
-* [CalendarLocalization](https://www.emacswiki.org/emacs/CalendarLocalization#toc34) on the EmacsWiki
+* [CalendarLocalization](https://www.emacswiki.org/emacs/CalendarLocalization) on the EmacsWiki
 
 ## Installation
+
+```
+M-x package-install [RET] swiss-holidays [RET]
+```
+## Configuration
+
+To use `swiss-holidays' in your calendar
+
+(setq holiday-other-holidays swiss-holidays)
+
+If you'd like to add regional holidays, pick additional holidays from
+`swiss-holidays-catholic`, `swiss-holidays-epiphany`,
+`swiss-holidays-st-joseph-day` or `swiss-holidays-labour-day`.
+
+For the canton of Zürich for example you'd use the following:
+
+``` emacs-lisp
+(setq holiday-other-holidays
+	(append swiss-holidays swiss-holidays-labour-day))
+```
+
+For the canton of Schwyz you could use the following:
+
+``` emacs-lisp
+(setq holiday-other-holidays
+	(append swiss-holidays swiss-holidays-catholic swiss-holidays-epiphany swiss-holidays-st-joseph-day))
+```
 
 ## License
 
