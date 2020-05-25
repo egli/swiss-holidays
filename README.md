@@ -14,9 +14,11 @@ M-x package-install [RET] swiss-holidays [RET]
 ```
 ## Configuration
 
-To use `swiss-holidays' in your calendar
+To use `swiss-holidays` in your calendar
 
+``` emacs-lisp
 (setq holiday-other-holidays swiss-holidays)
+```
 
 If you'd like to add regional holidays, pick additional holidays from
 `swiss-holidays-catholic`, `swiss-holidays-epiphany`,
