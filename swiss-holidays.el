@@ -1,4 +1,4 @@
-;;; swiss-holidays.el --- Swiss holidays for the calendar
+;;; swiss-holidays.el --- Swiss holidays for the calendar  -*- lexical-binding: t; -*-
 
 ;; Author: Christian Egli <christian.egli@alumni.ethz.ch>
 ;; Version: 0.1
