@@ -26,6 +26,10 @@
 ;;
 ;; Installation:
 ;;
+;;  M-x package-install RET swiss-holidays RET
+;;
+;; Configuration:
+;;
 ;; To use `swiss-holidays' in your calendar
 ;;
 ;;  (setq holiday-other-holidays swiss-holidays)
